@@ -45,23 +45,9 @@
 			<h2>Function</h2>
 			<h2>Register</h2></section>
 				<section>
-					<h3>Vendor Library</h3>
-<pre><code data-trim data-noescape class="c">
-CLOCK_EnableClock(kCLOCK_PortD);
-PORT_SetPinMux(PORTD, 6, kPORT_MuxAsGpio);
-const gpio_pin_config_t pinConf = {
-	.pinDirection = kGPIO_DigitalOutput,
-	.outputLogic = 1,
-};
-GPIO_PinInit(GPIOD, 6, &pinConf);
-				</code></pre>
-				</section>
-				<section>
-				<h3>"hand optimized" code</h3>
-					<pre><code data-trim data-noescape class="c">
-        SPI_MCR_REG(spi) &= ~SPI_MCR_MSTR_<span class="fragment highlight-current-code">SHIFT</span>;
-        SPI_MCR_REG(spi) <span class="fragment highlight-current-code">!</span>= (mode-&gt;mode&lt;&lt;SPI_MCR_<span class="fragment highlight-current-code">MTFR</span>_<span class="fragment highlight-current-code">MASK</span>);
-				</code></pre>
+					<h3>Keynote </br>Meeting Embedded 2018</h3>
+<span><img class="plain" width="40%" data-src="dansaks.jpg"></span>
+<h3>Dan Saks</h3>
 				</section>
 					<section>
 				<h3>Abstraction</h3>
@@ -87,6 +73,9 @@ GPIO_PinInit(GPIOD, 6, &pinConf);
 			<section data-background="wallpaper1.jpg">
 			
 			<section><h2>Testing</h2><h2>&amp;</h2><h2>Debugging</h2></section>
+<section data-background="cite.jpg">
+								<h3>Just get the code to compile, so you can get to the real work ... </br> debugging - Dan Saks</h3>
+</section>
 			<section><span><img data-src="screenshots/console_panel_1.png"></span></section>
 				<section><img data-src="screenshots/console_panel_2.png"></section>
 				<section><img data-src="screenshots/console_panel_3.png"></section>
@@ -95,10 +84,6 @@ GPIO_PinInit(GPIOD, 6, &pinConf);
 
 			
 			<section data-background="wallpaper1.jpg">
-			<section>
-			<h2>Wait a minute</h2>
-				<img height="auto" width="50%" data-src="thinking.jpg">
-			</section>
 				<section>
 					<h3>Kvasirs SFR mods</h3>
 <pre><code data-trim data-noescape class="c">
@@ -117,6 +102,11 @@ int main()
 				</section>
 					<section><h3>Kvasirs SFR mods</h3><img data-src="screenshots/kvasir.png"></section>
 				<section><h3>OpenOCD</h3><img data-src="screenshots/openocd1.png"><img data-src="screenshots/openocd2.png"></section>
+				<section>
+			<h2>Wait a minute</h2>
+				<img height="auto" width="50%" data-src="thinking.jpg">
+			</section>
+	
 			<section>
 
 				<h3>measurements</h3>
